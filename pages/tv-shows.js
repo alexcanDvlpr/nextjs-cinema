@@ -3,6 +3,7 @@ import TVShowCard from '../components/TVShowCard';
 import { getPopularTvShows } from '../services/TVShowsService';
 
 import 'react-multi-carousel/lib/styles.css';
+import styles from '../styles/TVShows.module.css';
 
 export async function getServerSideProps() {
     const data = await getPopularTvShows()
@@ -38,17 +39,17 @@ export default function Movies({ data }) {
 
     return (
         <div>
-            <div className="carousel-group">
+            <div className={styles.carousel_group}>
                 <h2>Series Populares</h2>
-                <Carousel transitionDuration={150} swipeable={true} draggable={true} infinite={true} itemClass="carousel-item-padding-40-px" className="carousel" responsive={responsive}>
+                <Carousel transitionDuration={150} swipeable={true} draggable={true} infinite={true} itemClass={styles.carousel_item_padding_40_px} className={styles.carousel} responsive={responsive}>
                     {
                         tvShows.map(tvShow => <TVShowCard tvShow={tvShow} key={tvShow.id} />)
                     }
                 </Carousel>
             </div>
-            <div className="carousel-group">
+            <div className={styles.carousel_group}>
                 <h2>Últimas Novedades</h2>
-                <Carousel transitionDuration={150} swipeable={true} draggable={true} infinite={true} itemClass="carousel-item-padding-40-px" className="carousel" responsive={responsive}>
+                <Carousel transitionDuration={150} swipeable={true} draggable={true} infinite={true} itemClass={styles.carousel_item_padding_40_px} className={styles.carousel} responsive={responsive}>
                     {
                         tvShows.map(tvShow => <TVShowCard tvShow={tvShow} key={tvShow.id} />)
                     }
