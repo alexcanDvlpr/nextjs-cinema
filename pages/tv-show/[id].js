@@ -39,10 +39,10 @@ export default function TvShow({ data }) {
         <div className="container">
             <div className={styles.tvshow_container}>
                 <div className={`row gx-0 ${styles.pt_40}`}>
-                    <div className="col-5">
-                        <img classNaestyles={styles.poster_img} src={poster_path} alt={name} />
+                    <div className="col-xs-12 col-sm-12 col-lg-5">
+                        <img className={styles.poster_img} src={poster_path} alt={name} />
                     </div>
-                    <div className="col-7">
+                    <div className="col-xs-12 col-sm-12 col-lg-7">
                         <div className={styles.tvshow_title_container}>
                             <h1 className={styles.tvshow_title}>{name}</h1>
                             <small className={styles.tvshow_subtitle}>{tagline}</small>
@@ -50,14 +50,14 @@ export default function TvShow({ data }) {
                         <hr />
                         <div className={styles.tvshow_description}>
                             <div className="row gx-0">
-                                <div className="col-10">
+                                <div className="col-12 col-sm-12 col-lg-10">
                                     <div className={styles.tvshow_genres_container}>
                                         {
                                             genres.map(genre => <span key={genre.id} className={`${styles.custom_badge} badge badge-success`}>{genre.name}</span>)
                                         }
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-12 col-sm-12 col-lg-2">
                                     <VotesAverage votes_average={vote_average} />
                                 </div>
                             </div>

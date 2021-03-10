@@ -26,7 +26,7 @@ export default function Movies({ popularTv, topRatedTv }) {
                 <CarouselSection title="Series Populares" sources={popularTv} type={tvShow} />
             </div>
             <div className={styles.carousel_group}>
-                <CarouselSection title="Series Populares" sources={topRatedTv} type={tvShow} />
+                <CarouselSection title="Series Más Votadas" sources={topRatedTv} type={tvShow} />
             </div>
         </div>
     )
