@@ -15,8 +15,6 @@ export async function getServerSideProps(router) {
 
 export default function TvShow({ data }) {
 
-    console.log(data);
-
     let {
         name,
         overview,

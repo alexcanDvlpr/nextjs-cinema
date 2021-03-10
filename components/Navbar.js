@@ -9,13 +9,19 @@ export default function Navbar() {
                 <span className="navbar-brand mb-0 h1">Cinema - Alexcan.Dvlpr</span>
                 <ul className="nav justify-content-end">
                     <li className="nav-item">
-                        <Link className="nav-link active" aria-current="page" href="/actors">Actors</Link>
+                        <Link href="/actors">
+                            <a className="nav-link active">Actors</a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" href="/movies">Movies</Link>
+                        <Link href="/movies">
+                            <a className="nav-link">Movies</a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" href="/tv-shows">TV Shows</Link>
+                        <Link href="/tv-shows">
+                            <a className="nav-link">TV Shows</a>
+                        </Link>
                     </li>
                 </ul>
             </div>
