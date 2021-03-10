@@ -58,7 +58,7 @@ export default function TvShow({ data }) {
                                     </div>
                                 </div>
                                 <div className="col-2">
-                                    <VotesAverage votes_average={ vote_average } />
+                                    <VotesAverage votes_average={vote_average} />
                                 </div>
                             </div>
                             <p className={styles.overview}>{overview}</p>

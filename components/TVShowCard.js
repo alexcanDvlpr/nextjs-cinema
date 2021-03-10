@@ -10,7 +10,7 @@ export default function TVShowCard({ tvShow }) {
             <div className={styles.card}>
                 <img className={styles.avatar_img} src={poster} alt={name} />
                 <div className={styles.back_card}>
-                    <h5 className="">{name}</h5>
+                    <h5>{name}</h5>
                     <h5>{vote_average} 👍</h5>
                 </div>
             </div>
