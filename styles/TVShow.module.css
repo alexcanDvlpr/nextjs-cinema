@@ -1,0 +1,44 @@
+.pt_40 {
+  padding-top: 40px;
+}
+
+.poster_img {
+  max-width: 500px;
+  max-height: 750px;
+  -webkit-box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+.tvshow_container .tvshow_description p.overview  {
+  font-size: 16px;
+  letter-spacing: 1.3px;
+}
+
+.tvshow_title_container {
+  width: 100%;
+}
+
+.tvshow_title {
+  font-size: 3.5rem;
+}
+
+.tvshow_subtitle {
+  letter-spacing: 1px;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.tvshow_genres_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tvshow_genres_container .custom_badge {
+  margin-left: 5px;
+}

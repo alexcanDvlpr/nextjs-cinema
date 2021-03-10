@@ -1,6 +1,8 @@
 import { getTvShowById } from '../../services/TVShowsService';
 import VotesAverage from '../../components/VotesAverage';
 
+import styles from '../../styles/TVShow.module.css';
+
 export async function getServerSideProps(router) {
 
     let data = await getTvShowById(`${router.query.id}`);
@@ -35,33 +37,33 @@ export default function TvShow({ data }) {
 
     return (
         <div className="container">
-            <div className="tvshow-container">
-                <div className="row gx-0 pt-40">
+            <div className={styles.tvshow_container}>
+                <div className={`row gx-0 ${styles.pt_40}`}>
                     <div className="col-5">
-                        <img className="poster-img" src={poster_path} alt="543654" />
+                        <img classNaestyles={styles.poster_img} src={poster_path} alt={name} />
                     </div>
                     <div className="col-7">
-                        <div className="tvshow-title-container">
-                            <h1 className="tvshow-title">{name}</h1>
-                            <small className="tvshow-subtitle">{tagline}</small>
+                        <div className={styles.tvshow_title_container}>
+                            <h1 className={styles.tvshow_title}>{name}</h1>
+                            <small className={styles.tvshow_subtitle}>{tagline}</small>
                         </div>
                         <hr />
-                        <div className="tvshow-description">
+                        <div className={styles.tvshow_description}>
                             <div className="row gx-0">
                                 <div className="col-10">
-                                    <div className="tvshow-genres-container">
+                                    <div className={styles.tvshow_genres_container}>
                                         {
-                                            genres.map(genre => <span key={genre.id} className="badge badge-success">{genre.name}</span>)
+                                            genres.map(genre => <span key={genre.id} className={`${styles.custom_badge} badge badge-success`}>{genre.name}</span>)
                                         }
                                     </div>
                                 </div>
                                 <div className="col-2">
-                                    <VotesAverage votes_average={ vote_average } />
+                                    <VotesAverage votes_average={vote_average} />
                                 </div>
                             </div>
-                            <p className="overview">{overview}</p>
+                            <p className={styles.overview}>{overview}</p>
                         </div>
-                        <div className="tvshow-data">
+                        <div className={styles.tvshow_data}>
                             <ul>
                                 {
                                     production_companies.map(company => <li key={company.id}>{company.name}</li>)

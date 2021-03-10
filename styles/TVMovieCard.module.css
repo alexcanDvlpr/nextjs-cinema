@@ -1,0 +1,52 @@
+.card {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 8px 0.5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 8px 0.5px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 8px 0.5px rgba(0, 0, 0, 0.75);
+}
+
+.card .back_card {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.card .back_card:hover {
+    animation-name: backAppear;
+    animation-duration: .4s;
+    animation-fill-mode: forwards;
+}
+
+.card .back_card > * {
+  color: azure;
+  font-size: 2rem;
+}
+
+.avatar_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+
+
+@keyframes backAppear {
+    to {
+        opacity: 1;
+    }
+}

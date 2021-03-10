@@ -1,32 +1,33 @@
 
-var apiKey = '3494423e1bd9d68b43adaf5270347b0b';
-var page = 1;
-var lang = 'es-ES';
+var apiKey = process.env.API_KEY
+var page = 1
+var lang = process.env.API_KEY
+var base_url = process.env.MOVIEDB_BASE_URL;
+var posters_base_url = process.env.POSTERS_BASE_URL;
 
 export async function getPopularTvShows() {
 
-    let tvShows = [];
+    let tvShows = []
 
-    const response = await fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=${lang}&page=${page}`);
-
-    const { results } = await response.json();
+    const response = await fetch(`${base_url}/tv/popular?api_key=${apiKey}&language=${lang}&page=${page}`)
+    const { results } = await response.json()
 
     tvShows = results.map(tvShow => {
         return {
             id: tvShow.id,
             name: tvShow.name,
             overview: tvShow.overview,
-            poster: `https://image.tmdb.org/t/p/w500${tvShow.backdrop_path}`
+            vote_average: tvShow.vote_average,
+            poster: `${posters_base_url}${tvShow.backdrop_path}`
         }
-    });
-    return tvShows;
+    })
+    return tvShows
 }
 
 export async function getTvShowById(id) {
 
-    const response = await fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}&language=${lang}`)
+    const response = await fetch(`${base_url}/tv/${id}?api_key=${apiKey}&language=${lang}`)
     let data = await response.json()
-    console.log(data);
-    return data
 
+    return data
 }

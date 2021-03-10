@@ -1,0 +1,14 @@
+.carousel {
+  height: auto;
+  margin-top: 15px;
+}
+
+.carousel_group {
+  margin: 5px;
+  padding: 10px;
+}
+
+.carousel .carousel_item_padding_40_px {
+  padding: 5px;
+  margin-bottom: 5px;
+}

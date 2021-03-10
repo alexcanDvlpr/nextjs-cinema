@@ -1,105 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
-.carousel {
-  height: auto;
-  margin-top: 15px;
-}
-
-.card {
-  min-height: 250px;
-  height: auto;
-  max-height: 250px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.avatar-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: top;
-}
-
-.carousel-group {
-  margin: 5px;
-  padding: 10px;
-}
-
-.carousel .carousel-item-padding-40-px {
-  padding: 5px;
-  margin-bottom: 5px;
-}
-
-.cursorP {
-  cursor: pointer;
-}
-
-.pt-40 {
-  padding-top: 40px;
-}
-
-.poster-img {
-  max-width: 500px;
-  max-height: 750px;
-  -webkit-box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.75);
-}
-
-.tvshow-container .tvshow-description p.overview  {
-  font-size: 16px;
-  letter-spacing: 1.3px;
-}
-
-.tvshow-title-container {
-  width: 100%;
-}
-
-.tvshow-title {
-  font-size: 3.5rem;
-}
-
-.tvshow-subtitle {
-  letter-spacing: 1px;
-  font-style: italic;
-  text-decoration: underline;
-}
-
-.tvshow-genres-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.tvshow-genres-container {
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.tvshow-container .badge {
-  margin-left: 5px;
 }
