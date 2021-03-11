@@ -1,7 +1,3 @@
-.pt_40 {
-  padding-top: 40px;
-}
-
 .poster_img {
   width: 100%;
   max-width: 500px;
@@ -42,4 +38,18 @@
 
 .tvshow_genres_container .custom_badge {
   margin-left: 5px;
+}
+
+
+.custom_dark_card {
+  background-color: var(--bs-dark);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .tvshow_title_container {
+      margin-bottom: 15px;
+  }
+  .tvshow_title {
+    font-size: 2.5rem;
+  }
 }

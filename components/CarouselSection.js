@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import TVShowCard from '../components/TVShowCard';
 
-import styles from '../styles/TVShows.module.css';
+import styles from '../styles/CarouselSection.module.css';
 
 export default function CarouselSection({ title, sources, type }) {
 
@@ -26,7 +26,7 @@ export default function CarouselSection({ title, sources, type }) {
 
     return (
         <>
-            <h2>{title}</h2>
+            <h2 className={styles.carousel_title}>{title}</h2>
             <Carousel transitionDuration={150} swipeable={true} draggable={true} infinite={true} itemClass={styles.carousel_item_padding_40_px} className={styles.carousel} responsive={responsive}>
                 {
                     sources.map(source => (

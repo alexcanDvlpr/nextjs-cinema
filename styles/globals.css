@@ -21,3 +21,25 @@ a {
 .nav-link {
   color: #fff;
 }
+
+.main_container {
+  width: 100%;
+  min-height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #4d4d4d;
+  color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar .container-fluid {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  /* Override Bootstrap Class to center navbar*/
+  .nav.justify-content-end {
+    width: 100%;
+    justify-content: center !important;
+  }
+}
