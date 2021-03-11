@@ -21,7 +21,7 @@ export default function Movies({ popularTv, topRatedTv }) {
     const tvShow = 'TVSHOW'
 
     return (
-        <div>
+        <div className="main_container">
             <div className={styles.carousel_group}>
                 <CarouselSection title="Series Populares" sources={popularTv} type={tvShow} />
             </div>
