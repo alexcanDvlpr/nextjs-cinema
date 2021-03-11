@@ -10,17 +10,17 @@ export default function Navbar() {
                 <ul className="nav justify-content-end">
                     <li className="nav-item">
                         <Link href="/actors">
-                            <a className="nav-link active">Actors</a>
+                            <a className="nav-link active">Actores</a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/movies">
-                            <a className="nav-link">Movies</a>
+                            <a className="nav-link">Películas</a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/tv-shows">
-                            <a className="nav-link">TV Shows</a>
+                            <a className="nav-link">Series</a>
                         </Link>
                     </li>
                 </ul>

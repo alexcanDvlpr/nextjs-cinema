@@ -3,9 +3,9 @@
   height: auto;
   position: relative;
   border-radius: 10px;
-  -webkit-box-shadow: 3px 3px 8px 0.5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 3px 8px 0.5px rgba(0, 0, 0, 0.75);
-  box-shadow: 3px 3px 8px 0.5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 3px 10px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 10px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 10px -2px rgba(0, 0, 0, 0.75);
 }
 
 .card .back_card {
@@ -26,9 +26,9 @@
 }
 
 .card .back_card:hover {
-    animation-name: backAppear;
-    animation-duration: .4s;
-    animation-fill-mode: forwards;
+  animation-name: backAppear;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
 }
 
 .card .back_card > * {
@@ -53,7 +53,14 @@
 }
 
 @keyframes backAppear {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+    border: 3px solid rgba(207, 207, 207, 0.7);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .not_avaible {
+    height: 220px;
+  }
 }

@@ -3,6 +3,8 @@ export default function Actors() {
 
 
     return (
-        <h1>Actors Page</h1>
+        <div className="main_container">
+            <h1>Actores Page</h1>
+        </div>
     )
 }

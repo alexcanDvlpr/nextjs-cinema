@@ -1,0 +1,32 @@
+.carousel_group {
+  margin: 5px;
+  padding: 10px;
+}
+
+.carousel {
+  margin: 0px 35px;
+  height: auto;
+  z-index: 1;
+}
+
+.carousel .carousel_item_padding_40_px {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.carousel_title {
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  padding-left: 35px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .carousel {
+    margin: 0px 5px;
+  }
+
+  .carousel_title {
+    padding-left: 10px;
+  }
+}

@@ -4,6 +4,12 @@ import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 
 function MyApp({ Component, pageProps }) {
+
+  function componentDidMount() {
+    require('jquery');
+    require('bootstrap');
+  }
+
   return (
     <>
       <Navbar />
