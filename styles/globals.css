@@ -22,6 +22,12 @@ a {
   color: #fff;
 }
 
+.main {
+  background-color: #4d4d4d;
+  color: #fff;
+  min-height: calc(100vh - 56px);
+}
+
 .main_container {
   width: 100%;
   min-height: calc(100vh - 56px);

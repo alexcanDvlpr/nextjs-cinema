@@ -2,6 +2,7 @@ import Carousel from 'react-multi-carousel';
 import TVShowCard from '../components/TVShowCard';
 
 import styles from '../styles/CarouselSection.module.css';
+import MovieCard from './MovieCard';
 
 export default function CarouselSection({ title, sources, type }) {
 
@@ -30,7 +31,7 @@ export default function CarouselSection({ title, sources, type }) {
             <Carousel transitionDuration={150} swipeable={true} draggable={true} infinite={true} itemClass={styles.carousel_item_padding_40_px} className={styles.carousel} responsive={responsive}>
                 {
                     sources.map(source => (
-                        (type === 'TVSHOW') ? <TVShowCard tvShow={source} key={source.id} /> : <p>Tarjeta de Movie</p>
+                        (type === 'TVSHOW') ? <TVShowCard tvShow={source} key={source.id} /> : <MovieCard key={source.id} movie={source} />
                     ))
                 }
             </Carousel>

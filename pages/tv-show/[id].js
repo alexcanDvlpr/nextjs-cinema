@@ -1,3 +1,5 @@
+import * as env from '../../constants/enviroment'
+
 import { getTvShowById } from '../../services/TVShowsService';
 import VotesAverage from '../../components/VotesAverage';
 import { Accordion, Card } from "react-bootstrap";
@@ -37,7 +39,7 @@ export default function TvShow({ data }) {
     const date = new Date(first_air_date);
     const strDate = date.toLocaleDateString('es-Es', dateOptions);
 
-    poster_path = `https://image.tmdb.org/t/p/w500${poster_path}`;
+    poster_path = `${env.posters_base_url}${poster_path}`;
 
     return (
         <div className="main_container">
